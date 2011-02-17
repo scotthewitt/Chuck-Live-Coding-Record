@@ -6,7 +6,7 @@ SinOsc ss => blackhole;
 0.1 => ss.freq;
 while(1)
 {
-(ss.last() * 10) + 100 => s.freq;
+(ss.last() * 100) + 100 => s.freq;
 1::ms => now;
 }
 }
