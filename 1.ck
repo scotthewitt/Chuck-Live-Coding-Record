@@ -9,5 +9,5 @@ for(0 => int i; i < 4; i++)
 	0.0 => n.gain;
 	Std.rand2f(20,100) * 1::ms => now;
 }
-Std.rand2f(200,290) * 1::ms => now;
+Std.rand2f(100,120) * 1::ms => now;
 }
