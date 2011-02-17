@@ -1,4 +1,4 @@
-TriOsc s => JCRev j => dac;
+SawOsc s => JCRev j => dac;
 
 function void lfo()
 {
