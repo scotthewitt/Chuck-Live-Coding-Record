@@ -1,7 +1,7 @@
 Noise n => Pan2 p => dac;
 while(1)
 {
-for(0 => int i; i < 10; 1++)
+for(0 => int i; i < 10; i++)
 {
 	Std.rand2f(-1.,1) => p.pan;
 	Std.rand2f(0.01,0.6) => n.gain;
