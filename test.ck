@@ -4,7 +4,7 @@ SinOsc s => dac;
 while(1)
 {
 	Std.rand2f(300,400) => s.freq;
-	200::ms => now;
+	400::ms => now;
 }
 
 //1000::ms => now;
