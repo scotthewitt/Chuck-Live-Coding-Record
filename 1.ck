@@ -1,6 +1,7 @@
-Noise n => dac;
+Noise n => Pan2 p => dac;
 while(1)
 {
+Std.rand2f(-1.,1) => p.pan;
 0.1 => n.gain;
 300::ms => now;
 0.0 => n.gain;
