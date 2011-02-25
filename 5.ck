@@ -4,8 +4,8 @@ Noise n => dac;
 
 0.7 => n.gain;
 
-2040 => s.freq;
-2000 => ss.freq;
+1840 => s.freq;
+1000 => ss.freq;
 while(1)
 {
 //0.03 => s.gain;
