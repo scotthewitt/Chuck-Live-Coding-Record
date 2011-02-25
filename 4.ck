@@ -1,14 +1,17 @@
-TriOsc t => JCRev j => dac;
+SawOsc t => JCRev j => dac;
 
-100 => t.freq;
+120 => t.freq;
 
+while(1)
+{
 for(0 => int i;i < 5; i++)
 {
 0.05 => t.gain;
 
-i * 50::ms => now;
+i * 10::ms => now;
 
 0.0 => t.gain;
 
-i * 500::ms => now;
+i * 100::ms => now;
+}
 }
