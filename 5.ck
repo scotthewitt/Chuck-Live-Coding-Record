@@ -2,6 +2,6 @@ SawOsc s => dac;
 
 130 => s.freq;
 
-s.gain => 0.6;
+0.6 => s.gain;
 
 1000::ms => now;
