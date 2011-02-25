@@ -2,8 +2,8 @@ SawOsc s => dac;
 SawOsc ss => dac;
 
 
-10080 => s.freq;
-12020 => ss.freq;
+1080 => s.freq;
+2020 => ss.freq;
 while(1)
 {
 //0.03 => s.gain;
