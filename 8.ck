@@ -11,11 +11,11 @@ float f;
 function void lfo()
 {
 SinOsc l => blackhole;
-0.1 => s.freq;
+0.01 => s.freq;
 while(1)
 {
 l.last() * 0.5 => j.gain;
-1::ms => now;
+10::ms => now;
 }
 }
 
