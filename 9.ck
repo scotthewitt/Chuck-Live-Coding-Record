@@ -31,7 +31,7 @@ d => now;
 }
 
 spork ~ lfo();
-spork ~ gg(500::ms);
+spork ~ gg(1000::ms);
 
 while(1)
 {
