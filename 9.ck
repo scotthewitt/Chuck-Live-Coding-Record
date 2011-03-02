@@ -19,19 +19,19 @@ l.last() * 0.1 => j.gain;
 }
 }
 
-function void gg()
+function void gg(dur d)
 {
 while(1)
 {
 0.0 => g.gain;
-200::ms => now;
+d => now;
 1 => g.gain;
-200::ms => now;
+d => now;
 }
 }
 
 spork ~ lfo();
-spork ~ gg();
+spork ~ gg(500::ms);
 
 while(1)
 {
