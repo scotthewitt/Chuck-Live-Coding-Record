@@ -24,7 +24,7 @@ spork ~ lfo();
 while(1)
 {
 Std.rand2f(1000,2000) => f => s.freq;
-f + 20.0 => ss.freq;
-f + 60 => ss.freq;
+f + 120.0 => ss.freq;
+f + 160 => ss.freq;
 100::ms => now;
 }
