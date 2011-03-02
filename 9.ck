@@ -24,9 +24,9 @@ function void gg()
 while(1)
 {
 0.0 => g.gain;
-100::ms => now;
+200::ms => now;
 1 => g.gain;
-100::ms => now;
+200::ms => now;
 }
 }
 
