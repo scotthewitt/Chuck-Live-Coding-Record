@@ -8,5 +8,5 @@ while(1)
 1 => e.keyOn;
 100::ms => now;
 0 => e.keyOn;
-400::ms => now;
+300::ms => now;
 }
