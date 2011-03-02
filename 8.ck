@@ -11,7 +11,7 @@ float f;
 function void lfo()
 {
 SawOsc l => blackhole;
-0.001 => s.freq;
+1 => s.freq;
 while(1)
 {
 l.last() * 0.3 => j.gain;
@@ -23,7 +23,7 @@ spork ~ lfo();
 
 while(1)
 {
-Std.rand2f(100,200) => f => s.freq;
+Std.rand2f(1000,2000) => f => s.freq;
 f + 20.0 => ss.freq;
 f + 60 => ss.freq;
 100::ms => now;
