@@ -8,7 +8,7 @@ float f;
 
 0.3 => j.gain;
 
-function lfo()
+function void lfo()
 {
 SinOsc l => blackhole;
 while(1)
