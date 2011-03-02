@@ -14,7 +14,7 @@ SinOsc l => blackhole;
 while(1)
 {
 l.last() * 0.5 => j.gain;
-10::ms => now;
+1::ms => now;
 }
 }
 
