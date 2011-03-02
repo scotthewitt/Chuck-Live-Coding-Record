@@ -6,7 +6,7 @@ SinOsc sss => j;
 
 float f;
 
-0.1 => j.gain;
+0.3 => j.gain;
 
 while(1)
 {
