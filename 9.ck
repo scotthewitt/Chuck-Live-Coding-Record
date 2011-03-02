@@ -14,7 +14,7 @@ SawOsc l => blackhole;
 1 => s.freq;
 while(1)
 {
-l.last() * 0.1 => j.gain;
+l.last() * 0.4 => j.gain;
 10::ms => now;
 }
 }
@@ -31,7 +31,7 @@ d => now;
 }
 
 spork ~ lfo();
-spork ~ gg(1000::ms);
+spork ~ gg(10::ms);
 
 while(1)
 {
