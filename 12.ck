@@ -19,11 +19,11 @@ d => now;
 
 1 => e.keyOff;
 
-d => now;
+d * 2::ms => now;
 }
 }
-spork ~ sy(4000, 150::ms);
-spork ~ sy(4200, 120::ms);
-spork ~ sy(4400, 10::ms);
+spork ~ sy(100, 15::ms);
+spork ~ sy(120, 12::ms);
+spork ~ sy(105, 10::ms);
 
 1::day => now;
