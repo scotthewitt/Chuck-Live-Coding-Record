@@ -1,9 +1,9 @@
-Noise n => dac;
+Noise n => JCRev j => dac;
 
 while(1)
 {
 0.4 => n.gain;
 100::ms => now;
 0.0 => n.gain;
-500::ms => now;
+5000::ms => now;
 }
