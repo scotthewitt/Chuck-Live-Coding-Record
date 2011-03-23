@@ -1,6 +1,6 @@
 Noise n => JCRev j => dac.chan(0);
 
-n => Delay d => JCrev jj => dac.chan(1);
+n => Delay d => JCRev jj => dac.chan(1);
 
 500::ms => d.max;
 
