@@ -1,6 +1,6 @@
 TriOsc t => Envelope e => JCRev j => dac;
 
-2000 => t.freq;
+4000 => t.freq;
 
 0.01 => t.gain;
 
