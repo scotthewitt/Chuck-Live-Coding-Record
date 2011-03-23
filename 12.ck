@@ -1,3 +1,5 @@
+//this has spent most of this evening broken sorry folks
+
 int ii;
 
 function void sy(float f, dur d, float mod)
