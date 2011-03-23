@@ -22,8 +22,8 @@ d => now;
 d * 2 => now;
 }
 }
-spork ~ sy(100, 150::ms);
+spork ~ sy(140, 150::ms);
 spork ~ sy(120, 120::ms);
-spork ~ sy(105, 100::ms);
+spork ~ sy(145, 100::ms);
 
 1::day => now;
