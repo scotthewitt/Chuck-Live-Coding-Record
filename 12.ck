@@ -2,7 +2,7 @@ int ii;
 
 function void sy(float f, dur d, float mod)
 {
-TriOsc t => Envelope e => JCRev j => dac;
+SqrOsc t => Envelope e => JCRev j => dac;
 while(1)
 {
 f => t.freq;
