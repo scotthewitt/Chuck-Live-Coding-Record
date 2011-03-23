@@ -19,7 +19,7 @@ d => now;
 
 1 => e.keyOff;
 
-d * 2::ms => now;
+d * 2 => now;
 }
 }
 spork ~ sy(100, 15::ms);
