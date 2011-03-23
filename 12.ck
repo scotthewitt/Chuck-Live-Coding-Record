@@ -4,7 +4,7 @@ TriOsc t => Envelope e => JCRev j => dac;
 
 f => t.freq;
 
-0.1 => t.gain;
+0.3 => t.gain;
 
 100::ms => e.duration;
 
