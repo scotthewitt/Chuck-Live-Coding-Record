@@ -8,8 +8,8 @@ n => Delay d => JCRev jj => dac.chan(1);
 
 while(1)
 {
-0.6 => n.gain;
+0.9 => n.gain;
 10::ms => now;
 0.0 => n.gain;
-390::ms => now;
+3090::ms => now;
 }
