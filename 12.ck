@@ -1,4 +1,4 @@
-function sy(float f)
+function void sy(float f)
 {
 TriOsc t => Envelope e => JCRev j => dac;
 
