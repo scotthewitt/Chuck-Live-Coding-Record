@@ -32,7 +32,7 @@ spork ~ sy(1000, 40::ms, 1.8);
 
 while(1)
 {
-Std.rand2(1,10) => ii;
+Std.rand2(1,20) => ii;
 10::ms => now;
 }
 
