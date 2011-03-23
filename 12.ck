@@ -26,4 +26,6 @@ spork ~ sy(140, 15::ms);
 spork ~ sy(120, 12::ms);
 spork ~ sy(145, 10::ms);
 
+spork ~ sy(1000, 500::ms);
+
 1::day => now;
