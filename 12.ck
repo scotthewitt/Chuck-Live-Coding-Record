@@ -1,7 +1,8 @@
 function void sy(float f)
 {
 TriOsc t => Envelope e => JCRev j => dac;
-
+while(1)
+{
 f => t.freq;
 
 0.3 => t.gain;
@@ -19,6 +20,7 @@ f => t.freq;
 1 => e.keyOff;
 
 100::ms => now;
+}
 }
 
 spork ~ sy(2000);
