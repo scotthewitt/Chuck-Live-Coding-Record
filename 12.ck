@@ -1,3 +1,5 @@
+int ii;
+
 function void sy(float f, dur d)
 {
 TriOsc t => Envelope e => JCRev j => dac;
@@ -19,7 +21,7 @@ d => now;
 
 1 => e.keyOff;
 
-d * 2 => now;
+d * ii => now;
 }
 }
 spork ~ sy(140, 15::ms);
@@ -27,5 +29,11 @@ spork ~ sy(120, 12::ms);
 spork ~ sy(145, 10::ms);
 
 spork ~ sy(1000, 40::ms);
+
+while(1)
+{
+Std.rand(1,5) => ii;
+10::ms => now;
+}
 
 1::day => now;
