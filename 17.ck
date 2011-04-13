@@ -10,7 +10,7 @@ SawOsc s => blackhole;
 while(1)
 {
 s.last() * 10 + 100 => t.freq;
-t.freq() + 80 => tt.freq;
+t.freq() * 10 + 80 => tt.freq;
 10::ms => now;
 }
 }
