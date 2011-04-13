@@ -24,7 +24,7 @@ for(int ii; ii < 10; ii++)
 ii * 0.1 => g.gain;
 //1000 => t.freq;
 //2000 => tt.freq;
-50::ms => now;
+10::ms => now;
  0. => g.gain;
 100::ms - (ii * 10::ms) => now;
 }
