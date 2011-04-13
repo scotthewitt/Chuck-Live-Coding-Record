@@ -4,6 +4,9 @@ TriOsc tt => g;
 function void lfo()
 {
 SawOsc s => blackhole;
+
+0.9 => s.freq;
+
 while(1)
 {
 s.last() * 10 + 1000 => t.freq;
