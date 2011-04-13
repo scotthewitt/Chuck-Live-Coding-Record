@@ -32,4 +32,5 @@ ii * 0.1 => g.gain;
 }
 400::ms => now;
 Std.rand2f(300,800) => ff;
+Std.rand2f(1000,4000) => fff;
 }
