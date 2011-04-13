@@ -28,4 +28,5 @@ ii * 0.1 => g.gain;
  0. => g.gain;
 100::ms - (ii * 10::ms) => now;
 }
+400::ms => now;
 }
