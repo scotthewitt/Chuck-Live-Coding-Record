@@ -2,7 +2,7 @@ Noise n => Gain g => Pan2 p => dac;
 
 while(1)
 {
-0.7 => g.gain;
+0.3 => g.gain;
  
 100::ms => now;
 
