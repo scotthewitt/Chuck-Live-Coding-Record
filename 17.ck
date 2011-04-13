@@ -5,7 +5,7 @@ function void lfo()
 {
 SawOsc s => blackhole;
 
-0.9 => s.freq;
+0.05 => s.freq;
 
 while(1)
 {
@@ -23,6 +23,6 @@ while(1)
 //1000 => t.freq;
 //2000 => tt.freq;
 500::ms => now;
- 0. => g.gain;
-500::ms => now;
+// 0. => g.gain;
+//500::ms => now;
 }
