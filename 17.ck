@@ -19,10 +19,12 @@ spork ~ lfo();
 
 while(1)
 {
-0.3 => g.gain;
+for(int ii; i < 10; i++)
+i * 0.1 => g.gain;
 //1000 => t.freq;
 //2000 => tt.freq;
-500::ms => now;
-// 0. => g.gain;
-//500::ms => now;
+50::ms => now;
+ 0. => g.gain;
+50::ms => now;
+}
 }
