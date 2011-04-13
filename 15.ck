@@ -8,5 +8,5 @@ while(1)
 
 0.0 => g.gain;
 
-Std.rand2f(100,6000) * 1::ms => now;
+Std.rand2f(100,2000) * 1::ms => now;
 }
