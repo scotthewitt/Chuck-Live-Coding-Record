@@ -1,5 +1,5 @@
 TriOsc t => Gain g => dac;
-TriOsc tt => g;
+SawOsc tt => g;
 
 function void lfo()
 {
@@ -26,6 +26,6 @@ ii * 0.1 => g.gain;
 //2000 => tt.freq;
 50::ms => now;
  0. => g.gain;
-50::ms => now;
+100::ms - (ii * 10::ms) => now;
 }
 }
