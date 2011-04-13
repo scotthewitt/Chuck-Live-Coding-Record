@@ -2,7 +2,7 @@ Noise n => Gain g => Pan2 p => dac;
 
 while(1)
 {
-0.3 => g.gain;
+0.7 => g.gain;
  
 100::ms => now;
 
@@ -10,5 +10,5 @@ while(1)
 
 Std.rand2f(-1.,1.) => p.pan;
 
-Std.rand2f(3000,8000) * 1::ms => now;
+Std.rand2f(8000,10000) * 1::ms => now;
 }
