@@ -23,7 +23,7 @@ while(1)
 {
 for(int ii; ii < 10; ii++)
 {
-ii * 0.1 => g.gain;
+ii * 0.2 => g.gain;
 //1000 => t.freq;
 //2000 => tt.freq;
 10::ms => now;
