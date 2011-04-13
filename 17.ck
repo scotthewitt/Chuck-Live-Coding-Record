@@ -11,7 +11,7 @@ while(1)
 {
 s.last() * 10 + 1000 => t.freq;
 t.freq() + 1000 => tt.freq;
-1::ms => now;
+10::ms => now;
 }
 }
 
