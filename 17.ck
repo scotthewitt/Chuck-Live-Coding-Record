@@ -28,7 +28,7 @@ ii * 0.2 => g.gain;
 //2000 => tt.freq;
 10::ms => now;
  0. => g.gain;
-100::ms - (ii * 10::ms) => now;
+25::ms - (ii * 2::ms) => now;
 }
 400::ms => now;
 Std.rand2f(300,800) => ff;
