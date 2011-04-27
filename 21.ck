@@ -14,7 +14,7 @@ while(1)
 {
 for(0 => int i; i < 10; i++)
 {
-Std.rand2f(5800,7600) => t.freq;
+Std.rand2f(1800,2600) => t.freq;
 i * 0.05 => t.gain;
 	1 => e.keyOn;
 	90::ms => now;
