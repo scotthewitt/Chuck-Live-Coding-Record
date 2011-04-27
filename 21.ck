@@ -14,9 +14,9 @@ function void gg()
 {
 while(1)
 {
-0.0 => auto.gate;
+0.0 => auto.gain;
 10::ms => now;
-0.9 => auto.gate;
+0.9 => auto.gain;
 10::ms => now;
 }
 }
