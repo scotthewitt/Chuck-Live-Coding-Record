@@ -1,8 +1,13 @@
 SawOsc t => Envelope e => JCRev j => Gain g => dac;
 
+//does not work (though sounds ace)
+//Sam F calls it 'Audio Death'
+
 j => Delay d => ResonZ rz => g;
 
-4.0 => rz.Q;
+.01 => rz.Q;
+800 => rz.freq;
+
 
 1000::ms => d.max;
 
@@ -12,12 +17,24 @@ j => Delay d => ResonZ rz => g;
 
 0.05 => t.gain;
 
+function void lfo()
+{
+SinOsc s => blackhole;
+0.1 => s.freq;
+while(1)
+{
+s.last() * 80 + 800 => rz.freq;
+1::ms => now;
+}
+}
+
+spork ~ lfo();
+
 //while(1)
 //{
 for(0 => int i; i < 10; i++)
 {
 Std.rand2f(800,1600) => t.freq;
-t.freq() * 0.5 => rz.freq;
 i * 0.05 => t.gain;
 	1 => e.keyOn;
 	80::ms => now;
