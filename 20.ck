@@ -2,7 +2,7 @@ SawOsc t => Envelope e => JCRev j => Gain g => dac;
 
 j => Delay d => ResonZ rz => g;
 
-1.0 => rz.Q;
+4.0 => rz.Q;
 
 1000::ms => d.max;
 
