@@ -1,4 +1,4 @@
-SawOsc t => Envelope e => JCRev j => Gain g => dac;
+TriOsc t => Envelope e => JCRev j => Gain g => dac;
 
 j => Delay d => g;
 
@@ -6,20 +6,20 @@ j => Delay d => g;
 
 800::ms => d.delay;
 
-10::ms => e.duration;
+1000::ms => e.duration;
 
 0.05 => t.gain;
 
 while(1)
 {
-for(0 => int i; i < 10; i++)
+for(0 => int i; i < 2; i++)
 {
-Std.rand2f(800,1600) => t.freq;
+Std.rand2f(2800,4600) => t.freq;
 i * 0.05 => t.gain;
 	1 => e.keyOn;
-	80::ms => now;
+	1080::ms => now;
 	0 => e.keyOn;
-	50::ms => now;
+	1050::ms => now;
 }
 Std.rand2f(2900,8000) * 1::ms => now;
 }
