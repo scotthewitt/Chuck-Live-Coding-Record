@@ -6,14 +6,15 @@ j => Delay d => g;
 
 800::ms => d.delay;
 
-Std.rand2f(80,120) => t.freq;
-
 100::ms => e.duration;
+
 0.05 => t.gain;
+
 while(1)
 {
 for(0 => int i; i < 10; i++)
 {
+Std.rand2f(80,120)) => t.freq;
 	1 => e.keyOn;
 	150::ms => now;
 	0 => e.keyOn;
