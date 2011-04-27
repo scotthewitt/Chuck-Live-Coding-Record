@@ -12,7 +12,7 @@ j => Delay d => g;
 
 while(1)
 {
-for(0 => int i; i < 4; i++)
+for(0 => int i; i < 10; i++)
 {
 Std.rand2f(5800,7600) => t.freq;
 i * 0.05 => t.gain;
