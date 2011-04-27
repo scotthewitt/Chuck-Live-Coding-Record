@@ -14,13 +14,13 @@ while(1)
 {
 for(0 => int i; i < 10; i++)
 {
-Std.rand2f(1800,2600) => t.freq;
+Std.rand2f(800,1600) => t.freq;
 i * 0.05 => t.gain;
 	1 => e.keyOn;
 	90::ms => now;
 	0 => e.keyOn;
 	100::ms => now;
 }
-Std.rand2f(2900,8000) * 1::ms => now;
+//Std.rand2f(2900,8000) * 1::ms => now;
 }
 
