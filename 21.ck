@@ -19,7 +19,7 @@ i * 0.05 => t.gain;
 	1 => e.keyOn;
 	90::ms => now;
 	0 => e.keyOn;
-	1000::ms => now;
+	100::ms => now;
 }
 Std.rand2f(2900,8000) * 1::ms => now;
 }
