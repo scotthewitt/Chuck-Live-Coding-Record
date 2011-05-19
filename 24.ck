@@ -4,9 +4,9 @@ TriOsc t => Envelope e => Delay d => Pan2 p => dac;
 
 e => p;
 
-300::ms => e.duration;
+300::ms => d.duration;
 
-100::ms => e.delay;
+100::ms => d.delay;
 
 Std.rand2f(2000,3000) => t.freq;
 1 => e.keyOn;
