@@ -1,6 +1,8 @@
+Gain g => dac;
+
 function void main(int md, float mg)
 {
-SawOsc t => Envelope e => Delay d => Pan2 p => dac;
+SawOsc t => Envelope e => Delay d => Pan2 p => g;
 
 e => Delay dd => JCRev j => p;
 
