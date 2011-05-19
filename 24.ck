@@ -6,7 +6,7 @@ e => p;
 
 300::ms => d.max;
 
-300::ms => d.delay;
+200::ms => d.delay;
 
 Std.rand2f(2000,3000) => t.freq;
 1 => e.keyOn;
