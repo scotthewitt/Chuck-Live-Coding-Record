@@ -1,4 +1,4 @@
-function void main()
+function void main(int md)
 {
 SawOsc t => Envelope e => Delay d => Pan2 p => dac;
 
@@ -24,11 +24,12 @@ Std.rand2f(2180,4100) => t.freq;
 0 => e.keyOn;
 80::ms => now; 
 Std.rand2f(-1.,1.) => p.pan;
-900::ms => now;
+md * 1::ms => now;
 }
 }
 
 
-spork ~ main();
+spork ~ main(100);
+spork ~ main(900);
 
 1::day => now;
