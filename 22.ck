@@ -4,7 +4,7 @@ SawOsc s => Envelope e => dac;
 
 100::ms => e.duration;
 
-function lfo()
+function void lfo()
 {
 	SinOsc l => blackhole;
 	10 => l.freq;
