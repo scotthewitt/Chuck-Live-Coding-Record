@@ -1,16 +1,16 @@
 SawOsc s => Envelope e => dac;
 
-180 => s.freq;
+180 => f;
 
 100::ms => e.duration;
 
-function void lfo()
+function void lfo(float f)
 {
 	SinOsc l => blackhole;
 	10 => l.freq;
 while(1)
 {
-l.last() * 10 + 180 => s.freq;
+l.last() * 10 + f => s.freq;
 1::ms => now;
 }
 }
