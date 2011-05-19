@@ -1,6 +1,6 @@
 SawOsc t => Envelope e => Delay d => Pan2 p => dac;
 
-0.7 => t.gain;
+0.5 => t.gain;
 
 e => p;
 
@@ -12,11 +12,11 @@ e => p;
 
 while(1)
 {
-Std.rand2f(1180,2100) => t.freq;
+Std.rand2f(2180,4100) => t.freq;
 1 => e.keyOn;
 80::ms => now;;
 0 => e.keyOn;
 80::ms => now; 
 Std.rand2f(-1.,1.) => p.pan;
-900::ms => now;
+400::ms => now;
 }
