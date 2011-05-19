@@ -1,6 +1,6 @@
 TriOsc t => Envelope e => Delay d => Pan2 p => dac;
 
-0.3 => t.gain;
+0.7 => t.gain;
 
 e => p;
 
