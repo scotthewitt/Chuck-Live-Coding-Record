@@ -1,4 +1,4 @@
-function void main(int md)
+function void main(int md, float mg)
 {
 SawOsc t => Envelope e => Delay d => Pan2 p => dac;
 
@@ -6,7 +6,7 @@ e => Delay dd => JCRev j => p;
 
 dd => Delay ddd => p;
 
-0.1 => t.gain;
+mg => t.gain;
 
 e => p;
 
@@ -29,7 +29,7 @@ md * 1::ms => now;
 }
 
 
-spork ~ main(100);
-spork ~ main(900);
+spork ~ main(100, 0.3);
+spork ~ main(900, 0.4);
 
 1::day => now;
