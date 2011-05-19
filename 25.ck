@@ -1,6 +1,6 @@
 SawOsc t => Envelope e => Delay d => Pan2 p => dac;
 
-e => Delay dd => p;
+e => Delay dd => JCRev j => p;
 
 dd => Delay ddd => p;
 
