@@ -22,5 +22,5 @@ Std.rand2f(2180,4100) => t.freq;
 0 => e.keyOn;
 80::ms => now; 
 Std.rand2f(-1.,1.) => p.pan;
-400::ms => now;
+900::ms => now;
 }
