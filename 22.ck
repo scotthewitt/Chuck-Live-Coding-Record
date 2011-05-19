@@ -1,6 +1,8 @@
 SawOsc s => Envelope e => dac;
 
-180 => f;
+float ff;
+
+180 => ff;
 
 100::ms => e.duration;
 
@@ -15,7 +17,7 @@ l.last() * 10 + f => s.freq;
 }
 }
 
-spork ~ lfo();
+spork ~ lfo(ff);
 
 while(1)
 {
