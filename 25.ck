@@ -1,14 +1,18 @@
 SawOsc t => Envelope e => Delay d => Pan2 p => dac;
 
-0.5 => t.gain;
+e => Delay dd => p;
+
+dd => Delay ddd => p;
+
+0.1 => t.gain;
 
 e => p;
 
 50::ms => e.duration;
 
-300::ms => d.max;
+300::ms => d.max => dd.max => ddd.max;
 
-200::ms => d.delay;
+200::ms => d.delay => dd.delay => ddd.delay;;
 
 while(1)
 {
