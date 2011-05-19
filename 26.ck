@@ -1,4 +1,4 @@
-function void super()
+function void main()
 {
 SawOsc t => Envelope e => Delay d => Pan2 p => dac;
 
@@ -29,6 +29,6 @@ Std.rand2f(-1.,1.) => p.pan;
 }
 
 
-spork ~ super();
+spork ~ main();
 
 1::day => now;
