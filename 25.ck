@@ -17,6 +17,6 @@ Std.rand2f(180,200) => t.freq;
 80::ms => now;;
 0 => e.keyOn;
 80::ms => now; 
-Std.rand2f(-1.,1.) => p.pan;)
+Std.rand2f(-1.,1.) => p.pan;
 300::ms => now;
 }
