@@ -2,7 +2,7 @@ SawOsc s => Envelope e => dac;
 
 float ff;
 
-120 => ff;
+180 => ff;
 
 100::ms => e.duration;
 
