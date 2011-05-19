@@ -4,7 +4,7 @@ TriOsc t => Envelope e => Delay d => Pan2 p => dac;
 
 e => p;
 
-300::ms => d.duration;
+300::ms => d.max;
 
 100::ms => d.delay;
 
