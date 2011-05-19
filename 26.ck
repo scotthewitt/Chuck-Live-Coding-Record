@@ -29,7 +29,7 @@ md * 1::ms => now;
 }
 
 
-spork ~ main(100, 0.3);
-spork ~ main(900, 0.4);
+spork ~ main(10, 0.3);
+spork ~ main(90, 0.4);
 
 1::day => now;
