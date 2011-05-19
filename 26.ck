@@ -34,4 +34,10 @@ md * 1::ms => now;
 spork ~ main(100, 0.1);
 spork ~ main(900, 0.2);
 
-1::day => now;
+while(1)
+{
+0.0 => g.gain;
+100::ms => now;
+0.9 => g.gain;
+100::ms => now;
+}
