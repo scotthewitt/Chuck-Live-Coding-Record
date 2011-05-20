@@ -5,7 +5,8 @@ SawOsc s => Envelope e => Pan2 p  => dac;
 120 => s.freq;
 
 200::ms => e.duration;
-
+while(1)
+{
 1 => e.keyOn;
 
 300::ms => now;
@@ -13,3 +14,4 @@ SawOsc s => Envelope e => Pan2 p  => dac;
 0 => e.keyOn;
 
 300::ms => now;
+}
