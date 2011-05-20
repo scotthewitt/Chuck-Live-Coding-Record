@@ -6,7 +6,8 @@ SawOsc s => Envelope e => Pan2 p  => dac;
 
 2000::ms => e.duration;
 
-1 => e.keyOn;
+1. => e.keyOn;
+
 3000::ms => now;
 
 0.0 => e.keyOn;
