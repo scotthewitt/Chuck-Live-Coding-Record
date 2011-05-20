@@ -5,8 +5,8 @@ while(1)
 
 Std.rand2f(-1.,1.) => p.pan;
 
-2.0 => i.next;
+.6 => i.next;
 
-Std.rand2f(0.9,3) * 1000::ms => now;
+Std.rand2f(0.9,3) * 100::ms => now;
 
 }
