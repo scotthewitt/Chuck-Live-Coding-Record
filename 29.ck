@@ -7,6 +7,7 @@ SawOsc s => Envelope e => Pan2 p  => dac;
 10::ms => e.duration;
 while(1)
 {
+Std.rand2f(2000,3000) => s.freq;
 1 => e.keyOn;
 
 20::ms => now;
