@@ -16,6 +16,6 @@ Std.rand2f(600,900) => t.freq;
 
 spork ~ mass();
 spork ~ mass();
-spork ~ Mass();
+spork ~ mass();
 
 1::day => now;
