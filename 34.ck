@@ -3,7 +3,7 @@ SinOsc ss => j;
 
 adc => Gain gg => blackhole;
 
-function l()
+function void  l()
 {
 while(1)
 {
