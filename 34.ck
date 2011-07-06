@@ -7,16 +7,17 @@ function void  l()
 {
 while(1)
 {
-gg.last() => g.gain;
+gg.last() * 0.7 => g.gain;
 10::ms => now;
 }
 }
 
 spork ~ l();
-
-2800 => s.freq;
-4600 => ss.freq;
-
-0.3 => g.gain;
-
+while(1)
+{
+Std.rand2f(3000,5000) => s.freq;
+Std.rand2f(2000,8000) => ss.freq;
+500::ms => now;
+//0.3 => g.gain;
+}
 20000::ms => now;
