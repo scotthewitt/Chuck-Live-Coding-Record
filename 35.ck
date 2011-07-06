@@ -1,8 +1,10 @@
 TriOsc t => Envelope e => Delay d => dac;
 
-5000::ms => e.duration;
-
+50::ms => e.duration;
+while(1)
+{
 1 => e.keyOn;
-9000::ms => now;
-0 => e.keyOff;
-9000::ms => now;
+90::ms => now;
+0 => e.keyOn;
+90::ms => now;
+}
