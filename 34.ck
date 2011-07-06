@@ -19,4 +19,4 @@ spork ~ l();
 
 0.3 => g.gain;
 
-2000::ms => now;
+20000::ms => now;
