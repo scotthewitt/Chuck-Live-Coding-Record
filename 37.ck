@@ -3,7 +3,7 @@ SawOsc s => dac;
 function void lfo()
 {
 	SinOsc l => blackhole;
-	100  => l.freq;
+	0.8  => l.freq;
 		while(1)
 		{			
 		(l.last() * 1000) + 500 => s.freq;
