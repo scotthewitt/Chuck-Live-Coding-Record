@@ -16,9 +16,7 @@ function void control()
 	}
 }
 
-//spork ~ 
-
-control();
+spork ~ control();
 
 function void control2()
 {
@@ -32,5 +30,5 @@ Std.rand2f(1400,2900) => float ff;
         }
 }
 
-//control2();
+control2();
 
