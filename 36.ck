@@ -1,4 +1,7 @@
-adc => blackhole;
+adc => Delay d => Gain g => blackhole;
+
+5000::ms => d.max;
+3000::ms => d.delay;
 
 SawOsc t => Gain gg => JCRev j => dac;
 
@@ -8,7 +11,7 @@ function void control()
 {
 	while(1)
 	{
-	adc.last() * 0.3 => gg.gain;
+	g.last() * 0.8 => gg.gain;
 	2::ms => now;
 	}
 }
