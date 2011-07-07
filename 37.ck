@@ -11,12 +11,17 @@ function void lfo()
 		}
 }
 
-//spork ~ 
-
-lfo();
+spork ~ lfo();
 
 while(1)
 {
-Std.rand2f(180,300) => s.freq;
-100::ms => now;
+SinOsc ll => blackhole;
+
+0.3 => ll.freq;
+
+while(1)
+{
+ll.last() => s.gain;
+1::ms => now;
+}
 }
