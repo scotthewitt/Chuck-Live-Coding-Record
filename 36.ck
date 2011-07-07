@@ -3,7 +3,7 @@ adc => Delay d => Gain g => blackhole;
 5000::ms => d.max;
 3000::ms => d.delay;
 
-TriOsc t => Gain gg => JCRev j => dac;
+TriOsc t => Gain gg => dac;
 
 2000 => t.freq;
 
@@ -31,3 +31,4 @@ Std.rand2f(1400,2900) => float ff;
 }
 
 control2();
+
