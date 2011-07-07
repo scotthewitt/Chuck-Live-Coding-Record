@@ -5,7 +5,7 @@ adc => Delay d => Gain g => blackhole;
 
 TriOsc t => Gain gg => dac;
 
-2000 => t.freq;
+6000 => t.freq;
 
 function void control()
 {
@@ -16,7 +16,9 @@ function void control()
 	}
 }
 
-spork ~ control();
+//spork ~ 
+
+control();
 
 function void control2()
 {
@@ -30,5 +32,5 @@ Std.rand2f(1400,2900) => float ff;
         }
 }
 
-control2();
+//control2();
 
