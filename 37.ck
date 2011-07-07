@@ -6,7 +6,7 @@ function void lfo()
 	.8  => l.freq;
 		while(1)
 		{			
-		(l.last() * 50) + 100 => s.freq;
+		(l.last() * 5) + 1000 => s.freq;
 		1::ms => now;
 		}
 }
