@@ -11,7 +11,9 @@ function void lfo()
 		}
 }
 
-spork ~ lfo();
+//spork ~ 
+
+lfo();
 
 while(1)
 {
