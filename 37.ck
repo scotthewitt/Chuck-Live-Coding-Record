@@ -17,7 +17,7 @@ while(1)
 {
 SinOsc ll => blackhole;
 
-0.9 => ll.freq;
+2.9 => ll.freq;
 
 while(1)
 {
