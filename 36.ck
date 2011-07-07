@@ -16,4 +16,15 @@ function void control()
 	}
 }
 
-control();
+spork ~ control();
+
+function void control2()
+{
+        while(1)
+        {
+        Std.rand2f(600,2000)  => t.freq;
+        100::ms => now;
+        }
+}
+
+control2();
