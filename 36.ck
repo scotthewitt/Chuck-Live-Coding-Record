@@ -11,7 +11,7 @@ function void control()
 {
 	while(1)
 	{
-	adc.last() * 0.9 => gg.gain;
+	adc.last() * 0.3 => gg.gain;
 	5::ms => now;
 	}
 }
