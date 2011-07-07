@@ -12,7 +12,7 @@ function void control()
 	while(1)
 	{
 	g.last() * 0.9 => gg.gain;
-	20::ms => now;
+	5::ms => now;
 	}
 }
 
@@ -20,9 +20,12 @@ spork ~ control();
 
 function void control2()
 {
+Std.rand2f(400,900) => float f;
+Std.rand2f(1400,2900) => float ff;
+
         while(1)
         {
-        Std.rand2f(600,2000)  => t.freq;
+        Std.rand2f(f,ff)  => t.freq;
         100::ms => now;
         }
 }
