@@ -18,4 +18,4 @@ spork ~ mass();
 spork ~ mass();
 spork ~ mass();
 
-1::day => now;
+2000::ms => now;
