@@ -6,7 +6,7 @@ function void mass()
 {
 while(1)
 {
-Std.rand2f(600,900) => t.freq;
+Std.rand2f(1600,3900) => t.freq;
 1 => e.keyOn;
 50::ms => now;
 0 => e.keyOn;
@@ -18,4 +18,4 @@ spork ~ mass();
 spork ~ mass();
 spork ~ mass();
 
-2000::ms => now;
+200::ms => now;
