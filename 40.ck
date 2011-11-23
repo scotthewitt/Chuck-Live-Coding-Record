@@ -18,7 +18,7 @@ if(kk%2)
 {
 160 => t.freq;
 }else {
-200 => t.freq;
+220 => t.freq;
 }
 2 * 200::ms => now;
 kk++;
