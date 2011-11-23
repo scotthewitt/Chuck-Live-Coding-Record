@@ -12,5 +12,6 @@ for(0 => int i;i < 2; i++)
 100::ms => now;
 }
 0.0 => t.gain;
+160 => t.freq;
 2 * 200::ms => now;
 }
