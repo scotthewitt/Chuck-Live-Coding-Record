@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# File provides version interface via git for Chuck
+# no args error
+# 1 args <filename> add file and run git commit
+# 2 args <filename shred-id> replace shred with file and run git commit
+
+if [ -z "$1" ]; then #no args
+echo $0 please submit file or file and shred number to replace
+exit
+elif [ -z "$2" ]; then # single filename argh add file and do git commit
+FILE=$1
+echo add $FILE
+chuck + $FILE
+git commit -a -m "live coding record"
+exit
+else 
+FILE=$1
+ID=$2
+echo replace shred $2 with $FILE
+chuck = $ID $FILE
+git commit -a -m "live coding record"
+fi
