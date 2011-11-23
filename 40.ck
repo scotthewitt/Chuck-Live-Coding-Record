@@ -1,5 +1,7 @@
 TriOsc t => JCRev j => dac;
 
+600 => t.freq;
+
 while(1)
 {
 for(0 => int i;i < 10; i++)
