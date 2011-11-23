@@ -20,6 +20,6 @@ if(kk%2)
 }else {
 220 => t.freq;
 }
-2 * 140::ms => now;
+2 * 120::ms => now;
 kk++;
 }
