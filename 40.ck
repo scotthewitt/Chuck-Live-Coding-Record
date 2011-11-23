@@ -14,7 +14,7 @@ for(0 => int i;i < 2; i++)
 100::ms => now;
 }
 0.0 => t.gain;
-if(kk%2)
+if(2%kk)
 {
 160 => t.freq;
 }else {
