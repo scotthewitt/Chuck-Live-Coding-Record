@@ -1,6 +1,6 @@
 SawOsc t => JCRev j => dac;
 
-200 => t.freq;
+160 => t.freq;
 
 while(1)
 {
