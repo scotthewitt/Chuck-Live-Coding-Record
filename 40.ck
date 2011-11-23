@@ -1,6 +1,6 @@
 TriOsc t => JCRev j => dac;
 
-600 => t.freq;
+900 => t.freq;
 
 while(1)
 {
