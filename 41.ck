@@ -1,6 +1,6 @@
 SawOsc s => Envelope e => JCRev j => dac;
 
-0.05 => s.gain;
+0.08 => s.gain;
 
 while(1)
 {
