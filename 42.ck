@@ -15,7 +15,7 @@ spork ~ chopper();
 
 4000::ms => e.duration;
 
-0.1 => e.target;
+0.01 => e.target;
 
 1 => e.keyOn;
 
