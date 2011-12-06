@@ -5,9 +5,9 @@ function void chopper()
 while(1)
 {
 Std.rand2f(0.1,0.9) => n.gain;
-Std.rand2f(20,80) * 1::ms => now;
+Std.rand2f(20,40) * 1::ms => now;
 0.0 => n.gain;
-50::ms => now;
+Std.rand2f(20,40) * 1::ms => now;
 }
 }
 
