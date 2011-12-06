@@ -5,9 +5,9 @@ function void chopper()
 while(1)
 {
 0.9 => n.gain;
-50::ms => now;
+10::ms => now;
 0.0 => n.gain;
-50::ms => now;
+10::ms => now;
 }
 }
 
