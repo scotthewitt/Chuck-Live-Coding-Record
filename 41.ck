@@ -1,6 +1,6 @@
 SawOsc s => JCRev j => dac;
 
-0.01 => s.gain;
+0.04 => s.gain;
 
 while(1)
 {
