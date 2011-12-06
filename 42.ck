@@ -1,17 +1,17 @@
 Noise n => Envelope e => dac;
 
-7000::ms => e.duration;
+4000::ms => e.duration;
 
 0.9 => e.target;
 
 1 => e.keyOn;
 
-3000::ms => now;
+2000::ms => now;
 
 0.0 => n.gain;
 500::ms => now;
-0.1 => n.gain;
-3500::ms => now;
+1. => n.gain;
+1500::ms => now;
 
 0.0 => e.target;
 
