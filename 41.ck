@@ -1,6 +1,6 @@
 SawOsc s => JCRev j => dac;
 
-0.01 => s.gain;
+0.05 => s.gain;
 
 
 
