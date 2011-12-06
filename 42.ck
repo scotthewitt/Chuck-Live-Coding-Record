@@ -5,9 +5,9 @@ function void chopper()
 while(1)
 {
 0.9 => n.gain;
-10::ms => now;
+50::ms => now;
 0.0 => n.gain;
-10::ms => now;
+50::ms => now;
 }
 }
 
@@ -21,13 +21,13 @@ spork ~ chopper();
 
 100::ms => now;
 
-4000::ms => e.duration;
+12000::ms => e.duration;
 
 0.0 => e.target;
 
 1 => e.keyOn;
 
-2000::ms => now;
+12000::ms => now;
 
-2000::ms => now;
+//2000::ms => now;
 
