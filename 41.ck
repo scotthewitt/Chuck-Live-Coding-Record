@@ -1,10 +1,10 @@
 SawOsc s => JCRev j => dac;
 
-0.3 => s.gain;
+0.0 => s.gain;
 
-//while(1)
-//{
-0.3 => s.gain;
+while(1)
+{
+0.0 => s.gain;
 for(0 => int i; i < 3; i++)
 {
 Std.rand2f(100,140) => s.freq;
@@ -15,4 +15,4 @@ Std.rand2f(100,140) => s.freq;
 
 40 * 100::ms => now;
 
-//}
+}
