@@ -13,6 +13,10 @@ while(1)
 
 spork ~ chopper();
 
+0.9 => e.target;
+
+1 => e.keyOn;
+
 4000::ms => e.duration;
 
 0.0 => e.target;
