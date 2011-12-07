@@ -1,6 +1,6 @@
 SawOsc s => Gain g => dac;
 
-0.3 => g.gain;
+0.4 => g.gain;
 
 //while(1)
 //{
