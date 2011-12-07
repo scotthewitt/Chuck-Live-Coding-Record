@@ -15,6 +15,8 @@ s.last() => p.pan;
 
 0.1 => n.gain;
 
+spork ~ pp();
+
 while(1)
 {
 0.9 => g.gain;
