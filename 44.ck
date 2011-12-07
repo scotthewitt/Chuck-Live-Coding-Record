@@ -1,6 +1,6 @@
 SinOsc s => Gain g => dac;
 
-0.01 => g.gain;
+0.1 => g.gain;
 
 //while(1)
 //{
