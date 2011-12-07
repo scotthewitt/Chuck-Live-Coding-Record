@@ -1,4 +1,4 @@
-Noise n => Gain g => dac;
+Noise n => Gain g => Pan2 p => dac;
 
 
 
