@@ -4,6 +4,6 @@ SinOsc s => Gain g => dac;
 
 while(1)
 {
-Std.rand2f(120,180) => s.freq;
+Std.rand2f(120,280) => s.freq;
 100::ms => now;
 }
