@@ -13,7 +13,7 @@ s.last() => p.pan;
 }
 }
 
-0.05 => n.gain;
+0.1 => n.gain;
 
 spork ~ pp();
 
