@@ -4,7 +4,7 @@ function void pp()
 {
 SinOsc s => blackhole;
 
-1. => s.freq;
+.1 => s.freq;
 
 while(1)
 {
@@ -13,7 +13,7 @@ s.last() => p.pan;
 }
 }
 
-0.1 => n.gain;
+0.05 => n.gain;
 
 spork ~ pp();
 
