@@ -1,6 +1,17 @@
 Noise n => Gain g => Pan2 p => dac;
 
+function void pp()
+{
+SinOsc s => blackhole;
 
+1. => s.freq;
+
+while(1)
+{
+s.last() => p.pan;
+10::ms => now;
+}
+}
 
 0.1 => n.gain;
 
