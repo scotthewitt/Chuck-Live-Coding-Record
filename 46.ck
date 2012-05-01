@@ -14,6 +14,6 @@ k * 10::ms => now;
 }
 4000::ms => now;
 
-Std.rand2f(1100,2300) => s.freq;
+Std.rand2f(1100,3300) => s.freq;
 
 }
