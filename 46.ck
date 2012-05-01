@@ -8,7 +8,7 @@ while(1)
 for(1 => int k; k < 20; k++)
 {
 Std.rand2f(-1.,1.) => p.pan;
-Std.rand2f(.1,.7) => s.gain;
+Std.rand2f(.0,.7) => s.gain;
 k * 10::ms => now;
 0.0 => s.gain;
 }
