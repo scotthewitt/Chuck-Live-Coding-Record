@@ -8,12 +8,12 @@ TriOsc t => Envelope e => Gain g => dac;
 
 0.9 => e.target;
 
-1. => e.keyOn;
+1 => e.keyOn;
 
 3000::ms => now;
 
 0.0 => e.target;
 
-0. => e.keyOff;
+0 => e.keyOff;
 
 3000::ms => now;
