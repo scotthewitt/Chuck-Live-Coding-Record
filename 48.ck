@@ -1,6 +1,6 @@
 TriOsc t => Envelope e => Gain g => dac;
 
-3000 => t.freq;
+Std.rand2f(0.8,1.3) * 3000 => t.freq;
 
 3000::ms => e.duration;
 
