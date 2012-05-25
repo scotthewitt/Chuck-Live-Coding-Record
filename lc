@@ -12,7 +12,7 @@ elif [ -z "$2" ]; then # single filename argh add file and do git commit
 FILE=$1
 echo add $FILE
 chuck + $FILE
-git commit -a -m "HELOpg at Hug The World Online Performace"
+git commit -a -m "HELOpg at Human Seeking Manchester"
 exit
 else 
 FILE=$1
