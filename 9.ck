@@ -6,7 +6,7 @@ SinOsc sss => j;
 
 float f;
 
-0.01 => j.gain;
+0.003 => g.gain;
 
 function void lfo()
 {
