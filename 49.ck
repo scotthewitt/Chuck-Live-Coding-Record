@@ -6,11 +6,11 @@ function void lfo()
 {
 
 SinOsc l => blackhole;
-4.0 => l.freq;
+2.0 => l.freq;
 
 while(1)
 {
-l.last() * 10 + hz[0] => s.freq;
+l.last() * 20 + hz[0] => s.freq;
 10::ms => now;
 }
 
@@ -26,7 +26,7 @@ while(1)
 {
 hz[i] * 1.0 => s.freq;
 
-0.1 => s.gain;
+0.2 => s.gain;
 
 0.9 => e.target;
 5000::ms => e.duration;
@@ -41,7 +41,7 @@ hz[i] * 1.0 => s.freq;
 i++;
 
 
-if(i > j)
+if(i = j)
 {
  0 => i;
 }
