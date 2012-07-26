@@ -1,6 +1,6 @@
 SawOsc s => Envelope e => dac;
 
-[130,140,120,130,120,130] @=> int hz[];
+[90,100,80,95,100,90] @=> int hz[];
 
 function void lfo()
 {
