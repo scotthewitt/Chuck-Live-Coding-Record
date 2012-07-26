@@ -24,7 +24,7 @@ hz.size() => int j;
 
 while(1)
 {
-Std.rand2(5,7) => i;
+Std.rand2(0,5) => i;
 
 hz[i] * 1.0 => s.freq;
 
@@ -39,9 +39,5 @@ hz[i] * 1.0 => s.freq;
 40::ms => now;
 
 0.0 => s.gain;
-40::ms => now;
-
-40 * 3 * 4::ms  => now;
-
 }
 
