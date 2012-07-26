@@ -2,17 +2,31 @@ SawOsc s => Envelope e => dac;
 
 [130,140,120,130,120,130] @=> int hz[];
 
+function void lfo()
+{
+
+SinOsc l => blackhole;
+0.1 => l.freq;
+
+while(1)
+{
+l.last() * 10 + hz[0] => s.freq;
+10::ms => now;
+}
+
+}
+
+spork ~ lfo();
+
 0 => int i; 
 
 hz.size() => int j;
 
 while(1)
 {
-
-
 hz[i] * 1.0 => s.freq;
 
-0.3 => s.gain;
+0.1 => s.gain;
 
 0.9 => e.target;
 5000::ms => e.duration;
