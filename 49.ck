@@ -4,7 +4,7 @@ SawOsc s => Envelope e => dac;
 
 0 => int i; 
 
-hz.size => int j;
+hz.size() => int j;
 
 while(1)
 {
