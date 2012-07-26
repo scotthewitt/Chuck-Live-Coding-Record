@@ -23,7 +23,7 @@ hz[i] * 1.0 => s.freq;
 0.0 => s.gain;
 
 i++;
-if(i > hz.length)
+if(i > hz.size)
 {
  0 => i;
 }
