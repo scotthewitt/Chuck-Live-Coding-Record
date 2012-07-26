@@ -28,7 +28,7 @@ Std.rand2(0, 5) => i;
 
 hz[i] * 1.0 => s.freq;
 
-0.01 => s.gain;
+0.1 => s.gain;
 
 0.9 => e.target;
 50::ms => e.duration;
