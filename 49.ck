@@ -1,6 +1,6 @@
 SawOsc s => Envelope e => dac;
 
-[130,140,120,130,120,130] => int freq[];
+int freq[130,140,120,130,120,130];
 
 while(1)
 {
