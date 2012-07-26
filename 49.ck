@@ -24,7 +24,7 @@ hz.size() => int j;
 
 while(1)
 {
-Std.rand(0, 5) => i;
+Std.rand2(0, 5) => i;
 
 hz[i] * 1.0 => s.freq;
 
