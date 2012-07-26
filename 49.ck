@@ -2,7 +2,7 @@ SawOsc s => Envelope e => dac;
 
 130 => s.freq;
 
-0.1 => s.gain;
+0.3 => s.gain;
 
 0.9 => e.target;
 5000::ms => e.duration;
