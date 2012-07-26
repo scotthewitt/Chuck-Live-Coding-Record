@@ -1,9 +1,10 @@
 SawOsc s => Envelope e => dac;
 
-int freq[130,140,120,130,120,130];
+[130,140,120,130,120,130] => int freq;
 
 while(1)
 {
+
 freq[0] * 1.0 => s.freq;
 
 0.3 => s.gain;
