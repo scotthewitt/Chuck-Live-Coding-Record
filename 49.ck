@@ -28,18 +28,18 @@ Std.rand2(0, 5) => i;
 
 hz[i] * 1.0 => s.freq;
 
-0.1 => s.gain;
+0.2 => s.gain;
 
 0.9 => e.target;
-50::ms => e.duration;
+40::ms => e.duration;
 1 => e.keyOn;
-50::ms => now;
+40::ms => now;
 0.0 => e.target;
 1 => e.keyOn;
-50::ms => now;
+40::ms => now;
 
 0.0 => s.gain;
-50::ms => now;
+40::ms => now;
 
 }
 
