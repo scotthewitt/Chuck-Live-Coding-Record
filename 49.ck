@@ -6,7 +6,7 @@ function void lfo()
 {
 
 SinOsc l => blackhole;
-0.1 => l.freq;
+4.0 => l.freq;
 
 while(1)
 {
