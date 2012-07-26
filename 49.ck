@@ -4,6 +4,8 @@ SawOsc s => Envelope e => dac;
 
 0 => int i; 
 
+hz.size => int j;
+
 while(1)
 {
 
@@ -23,7 +25,9 @@ hz[i] * 1.0 => s.freq;
 0.0 => s.gain;
 
 i++;
-if(i > hz.size)
+
+
+if(i > j)
 {
  0 => i;
 }
