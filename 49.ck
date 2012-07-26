@@ -1,6 +1,6 @@
 SawOsc s => Envelope e => dac;
 
-[90,100,80,95,100,90] @=> int hz[];
+[90,100,80,95,100,90,1000,1400,1300] @=> int hz[];
 
 function void lfo()
 {
@@ -24,7 +24,7 @@ hz.size() => int j;
 
 while(1)
 {
-Std.rand2(0, 5) => i;
+Std.rand2(5,7) => i;
 
 hz[i] * 1.0 => s.freq;
 
@@ -40,6 +40,8 @@ hz[i] * 1.0 => s.freq;
 
 0.0 => s.gain;
 40::ms => now;
+
+40 * 3 * 4::ms  => now;
 
 }
 
