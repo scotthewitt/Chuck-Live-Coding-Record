@@ -2,10 +2,13 @@ SawOsc s => Envelope e => dac;
 
 [130,140,120,130,120,130] @=> int hz[];
 
+0 => int i; 
+
 while(1)
 {
 
-hz[0] * 1.0 => s.freq;
+
+hz[i] * 1.0 => s.freq;
 
 0.3 => s.gain;
 
@@ -18,4 +21,12 @@ hz[0] * 1.0 => s.freq;
 5000::ms => now;
 
 0.0 => s.gain;
+
+i++
+if(i > hz.length)
+{
+ 0 => i;
 }
+
+}
+
