@@ -11,7 +11,6 @@ SinOsc l => blackhole;
 	while(1)
 	{
 	l.last() * 20 + hz[0] => s.freq;
-	l.last() => s.gain;
 	10::ms => now;
 	}
 
@@ -25,9 +24,11 @@ hz.size() => int j;
 
 while(1)
 {
+Std.rand(0, 5) => i;
+
 hz[i] * 1.0 => s.freq;
 
-0.1 => s.gain;
+0.01 => s.gain;
 
 0.9 => e.target;
 50::ms => e.duration;
@@ -39,13 +40,6 @@ hz[i] * 1.0 => s.freq;
 
 0.0 => s.gain;
 50::ms => now;
-i++;
-
-
-if(i > j)
-{
- 0 => i;
-}
 
 }
 
